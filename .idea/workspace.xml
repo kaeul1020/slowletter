@@ -27,13 +27,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="inbox basic setting">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="mainactivity &#10;Screen change">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/MainActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/inboxlist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/inboxlist.xml" afterDir="false" />
     </list>
@@ -159,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620488983287</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="mainactivity &#10;Screen change">
+      <created>1620540626529</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1620540626529</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,7 +178,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inbox basic setting" />
-    <option name="LAST_COMMIT_MESSAGE" value="inbox basic setting" />
+    <MESSAGE value="mainactivity &#10;Screen change" />
+    <option name="LAST_COMMIT_MESSAGE" value="mainactivity &#10;Screen change" />
   </component>
   <component name="WindowStateProjectService">
     <state x="698" y="170" key="AndroidCreateResourceFileDialog" timestamp="1620488780135">
