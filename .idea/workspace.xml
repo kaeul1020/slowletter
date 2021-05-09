@@ -27,12 +27,20 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="delete actionbar">
+    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="implement backbutton">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/Inbox_Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/inbox_item_close.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/inbox_item_open.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/inboxlist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/inboxlist.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,8 +56,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -69,8 +77,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DGU" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Desktop/Project11_1" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -198,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620541601296</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implement backbutton">
+      <created>1620542059619</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1620542059619</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -220,25 +235,46 @@
     <MESSAGE value="appointed color" />
     <MESSAGE value="modify error" />
     <MESSAGE value="delete actionbar" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete actionbar" />
+    <MESSAGE value="implement backbutton" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement backbutton" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="698" y="170" key="AndroidCreateResourceFileDialog" timestamp="1620488780135">
+    <state x="856" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1620548238426">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="698" y="170" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620488780135" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620541359090">
+    <state x="856" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1620548238426" />
+    <state x="575" y="222" key="AndroidCreateResourceFileDialog" timestamp="1620546170841">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620541359090" />
+    <state x="575" y="222" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620546170841" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620546858004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620546858004" />
+    <state width="1491" height="210" key="GridCell.Tab.0.bottom" timestamp="1620549563578">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1620549563578" />
+    <state width="1491" height="210" key="GridCell.Tab.0.center" timestamp="1620549563578">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1620549563578" />
+    <state width="1491" height="210" key="GridCell.Tab.0.left" timestamp="1620549563578">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1620549563578" />
+    <state width="1491" height="210" key="GridCell.Tab.0.right" timestamp="1620549563578">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1620549563578" />
     <state x="564" y="132" key="RollbackChangesDialog" timestamp="1620540787342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="132" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1620540787342" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1620488163074">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1620548214340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620488163074" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620548214340" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1620541642306">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
