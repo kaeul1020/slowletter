@@ -27,10 +27,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="mainactivity &#10;Screen change">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/inboxlist.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/inboxlist.xml" afterDir="false" />
+    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="modify error">
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DGU" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
@@ -161,7 +162,35 @@
       <option name="project" value="LOCAL" />
       <updated>1620540626529</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="image name change">
+      <created>1620541012302</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620541012302</updated>
+    </task>
+    <task id="LOCAL-00004" summary="image name change">
+      <created>1620541019161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1620541019161</updated>
+    </task>
+    <task id="LOCAL-00005" summary="appointed color">
+      <created>1620541250692</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620541250692</updated>
+    </task>
+    <task id="LOCAL-00006" summary="modify error">
+      <created>1620541267433</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1620541267433</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,17 +208,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inbox basic setting" />
     <MESSAGE value="mainactivity &#10;Screen change" />
-    <option name="LAST_COMMIT_MESSAGE" value="mainactivity &#10;Screen change" />
+    <MESSAGE value="image name change" />
+    <MESSAGE value="appointed color" />
+    <MESSAGE value="modify error" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify error" />
   </component>
   <component name="WindowStateProjectService">
     <state x="698" y="170" key="AndroidCreateResourceFileDialog" timestamp="1620488780135">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="698" y="170" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1620488780135" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620488128645">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1620541359090">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620488128645" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620541359090" />
     <state x="564" y="132" key="RollbackChangesDialog" timestamp="1620540787342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -198,6 +230,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1620488163074" />
+    <state x="-6" y="0" width="781" height="830" key="dock-window-1" timestamp="1620541464442">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="-6" y="0" width="781" height="830" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1620541464442" />
     <state x="868" y="332" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1620488534125">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
