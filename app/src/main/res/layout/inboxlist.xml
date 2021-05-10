@@ -5,7 +5,6 @@
     android:id="@+id/inbox_view_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#00FFFFFF"
     android:gravity="right"
     android:orientation="vertical"
     tools:context=".InboxList">
@@ -23,8 +22,7 @@
             android:layout_margin="20dp"
             android:background="@null"
             android:scaleType="fitCenter"
-            android:src="@drawable/arrow"
-            />
+            android:src="@drawable/arrow" />
 
         <TextView
             android:id="@+id/textView"
@@ -48,12 +46,14 @@
     </LinearLayout>
 
 
-
-        <GridView
-            android:id="@+id/inbox_gridview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:numColumns="4"></GridView>
+    <GridView
+        android:id="@+id/inbox_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:numColumns="4"
+        android:verticalSpacing="2dp"
+        ></GridView>
 
 
 </LinearLayout>

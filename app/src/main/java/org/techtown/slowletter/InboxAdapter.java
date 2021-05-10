@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridLayout;
+import android.widget.GridView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -83,6 +84,7 @@ public class InboxAdapter extends BaseAdapter {
             //d-day가 지났으면 open
             LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             convertView=inflater.inflate(R.layout.inbox_item_open,parent,false);
+            
             viewHolder = new InboxItemViewHolder();
             viewHolder.d_day_Tv = (TextView)convertView.findViewById(R.id.receive_day_open_textview);
             viewHolder.d_day_Tv.setText(""+inbox_item.r_year+"."+inbox_item.r_month+"."+inbox_item.r_day);
