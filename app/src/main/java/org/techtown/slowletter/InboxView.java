@@ -6,10 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class InboxView extends AppCompatActivity {
 
-    private int i;   //몇번째 편지인지 표시할 정수
+    private int position;   //몇번째 편지인지 표시할 정수
 
-    public InboxView(int i){
-        this.i = i;
+    public InboxView(int position){
+        this.position = position;
     }
 
     @Override

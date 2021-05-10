@@ -6,12 +6,11 @@ import android.view.View;
 import android.widget.GridView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class InboxList extends AppCompatActivity {
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +35,13 @@ public class InboxList extends AppCompatActivity {
         inboxlist_adpater.addItem(new Inbox_Item(2017,10,20));
         inboxlist_adpater.addItem(new Inbox_Item(2021,10,20));
         inboxlist_adpater.addItem(new Inbox_Item(2022,10,20));
+        inboxlist_adpater.addItem(new Inbox_Item(2022,5,20));
         inboxlist_adpater.addItem(new Inbox_Item(2023,10,20));
+        inboxlist_adpater.addItem(new Inbox_Item(2023,11,20));
+        inboxlist_adpater.addItem(new Inbox_Item(2023,11,20));
+        inboxlist_adpater.addItem(new Inbox_Item(2023,11,20));
+
+
         inboxlist.setAdapter(inboxlist_adpater);
     }
 

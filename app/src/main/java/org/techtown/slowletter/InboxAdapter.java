@@ -1,12 +1,15 @@
 package org.techtown.slowletter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.provider.Telephony;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -14,7 +17,6 @@ import java.util.Calendar;
 public class InboxAdapter extends BaseAdapter {
     ArrayList<Inbox_Item> items=new ArrayList<Inbox_Item>();
     Context context;
-    int column = 4;
 
     public void addItem(Inbox_Item item){
         items.add(item);
@@ -75,6 +77,18 @@ public class InboxAdapter extends BaseAdapter {
                 //d-day가 안지났으면 close
                 LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView=inflater.inflate(R.layout.inbox_item_close,parent,false);
+
+
+                final int pos = position;
+                convertView.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        View view =(View) View.inflate(context,R.layout.inboxview,null);
+
+                    }
+                });
+
+
             }
 
         }
@@ -84,3 +98,4 @@ public class InboxAdapter extends BaseAdapter {
     }
 
 }
+
