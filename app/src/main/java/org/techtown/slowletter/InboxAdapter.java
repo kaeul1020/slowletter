@@ -2,7 +2,12 @@ package org.techtown.slowletter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
+import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.provider.Telephony;
+import android.text.Layout;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +15,12 @@ import android.widget.BaseAdapter;
 import android.widget.GridLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -21,8 +32,6 @@ public class InboxAdapter extends BaseAdapter {
     public void addItem(Inbox_Item item){
         items.add(item);
     }
-
-
 
     public InboxAdapter(Context c){
         context=c;
@@ -45,6 +54,7 @@ public class InboxAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+        InboxItemViewHolder viewHolder;
 
         //DB에서 값을 가져올 때 바꿔야할 값 //지금 임의로 설정한 값임
         Inbox_Item inbox_item = items.get(position);
@@ -53,7 +63,7 @@ public class InboxAdapter extends BaseAdapter {
         Calendar today = Calendar.getInstance();
         //받을 날짜
         Calendar receive_day= Calendar.getInstance();
-        receive_day.set(inbox_item.year,inbox_item.month,inbox_item.day);
+        receive_day.set(inbox_item.r_year,inbox_item.r_month,inbox_item.r_day);
 
         /// D-day 계산 시작
         //일단위로 값 가져오기
@@ -67,35 +77,45 @@ public class InboxAdapter extends BaseAdapter {
         ///D-day 계산 끝
 
         //inbox_item.xml과 연결
-        if(convertView==null){
-
-            if(d_day>=0){
-                //d-day가 지났으면 open
-                LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                convertView=inflater.inflate(R.layout.inbox_item_open,parent,false);
-            }else{
-                //d-day가 안지났으면 close
-                LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-                convertView=inflater.inflate(R.layout.inbox_item_close,parent,false);
 
 
-                final int pos = position;
-                convertView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        View view =(View) View.inflate(context,R.layout.inboxview,null);
+        if(d_day>=0){
+            //d-day가 지났으면 open
+            LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView=inflater.inflate(R.layout.inbox_item_open,parent,false);
+            viewHolder = new InboxItemViewHolder();
+            viewHolder.d_day_Tv = (TextView)convertView.findViewById(R.id.receive_day_open_textview);
+            viewHolder.d_day_Tv.setText(""+inbox_item.r_year+"."+inbox_item.r_month+"."+inbox_item.r_day);
+            viewHolder.sent_Tv  = (TextView)convertView.findViewById(R.id.sent_day_open_textview);
+            viewHolder.sent_Tv.setText(""+inbox_item.s_year+"."+inbox_item.s_month+"."+inbox_item.s_day);
+        }else{
+            //d-day가 안지났으면 close
+            LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+            convertView=inflater.inflate(R.layout.inbox_item_close,parent,false);
+            viewHolder = new InboxItemViewHolder();
+            viewHolder.d_day_Tv = (TextView)convertView.findViewById(R.id.d_day_close_textview);
+            viewHolder.d_day_Tv.setText("D - "+Math.abs(d_day));
+            viewHolder.sent_Tv  = (TextView)convertView.findViewById(R.id.sent_day_close_textview);
+            viewHolder.sent_Tv.setText(""+inbox_item.s_year+"."+inbox_item.s_month+"."+inbox_item.s_day);
 
-                    }
-                });
+            final int pos = position;
+            convertView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    View view =(View) View.inflate(context,R.layout.inboxview,null);
 
+                }
+            });
 
-            }
 
         }
 
 
+
         return convertView;
     }
-
 }
+
+
+
 
