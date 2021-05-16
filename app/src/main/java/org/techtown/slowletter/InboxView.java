@@ -12,6 +12,10 @@ public class InboxView extends AppCompatActivity {
         this.position = position;
     }
 
+    public InboxView() {
+        // error로 인해 하나 만들음
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

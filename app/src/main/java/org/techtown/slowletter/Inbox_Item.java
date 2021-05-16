@@ -11,6 +11,17 @@ public class Inbox_Item {
     int r_month;
     int r_day;
 
+    //편지를 열지 말지 (기준 : d-day)
+    boolean letter_open;
+
+    public boolean isLetter_open() {
+        return letter_open;
+    }
+
+    public void setLetter_open(boolean letter_open) {
+        this.letter_open = letter_open;
+    }
+
     public Inbox_Item(int s_year, int s_month, int s_day, int r_year, int r_month, int r_day){
         this.s_year=s_year;
         this.s_month=s_month;
