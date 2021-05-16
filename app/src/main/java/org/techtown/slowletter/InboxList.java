@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -112,7 +113,6 @@ public class InboxList extends AppCompatActivity {
 
             //inbox_item.xml과 연결
 
-
             if(d_day>=0){
                 //d-day가 지났으면 open
                 inbox_item.setLetter_open(true);
@@ -120,24 +120,20 @@ public class InboxList extends AppCompatActivity {
                 convertView=inflater.inflate(R.layout.inbox_item_open,parent,false);
 
                 viewHolder = new InboxItemViewHolder();
-                viewHolder.d_day_Tv = (TextView)convertView.findViewById(R.id.receive_day_open_textview);
-                viewHolder.d_day_Tv.setText(""+inbox_item.r_year+"."+inbox_item.r_month+"."+inbox_item.r_day);
-                viewHolder.sent_Tv  = (TextView)convertView.findViewById(R.id.sent_day_open_textview);
-                viewHolder.sent_Tv.setText(""+inbox_item.s_year+"."+inbox_item.s_month+"."+inbox_item.s_day);
+                OpenbasicSetting(viewHolder,convertView,inbox_item);
+
             }else{
                 //d-day가 안지났으면 close
                 inbox_item.setLetter_open(false);
                 LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView=inflater.inflate(R.layout.inbox_item_close,parent,false);
+
                 viewHolder = new InboxItemViewHolder();
-                viewHolder.d_day_Tv = (TextView)convertView.findViewById(R.id.d_day_close_textview);
-                viewHolder.d_day_Tv.setText("D - "+Math.abs(d_day));
-                viewHolder.sent_Tv  = (TextView)convertView.findViewById(R.id.sent_day_close_textview);
-                viewHolder.sent_Tv.setText(""+inbox_item.s_year+"."+inbox_item.s_month+"."+inbox_item.s_day);
+                ClosebasicSetting(viewHolder,convertView,inbox_item,d_day);
 
             }
 
-            //adapter에서 각각 item onclick못해서 여기로 옮겨옴
+            //각각 클릭했을 때 해당 뷰로 이동
             inboxlist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -147,12 +143,31 @@ public class InboxList extends AppCompatActivity {
                         Intent intent = new Intent(getApplicationContext(),InboxView.class);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(getApplicationContext(),"open X", Toast.LENGTH_SHORT).show();
+                        Toast toast =Toast.makeText(getApplicationContext(),"편지가 열리기까지\n"+Math.abs(d_day)+"일 만큼 남았습니다", Toast.LENGTH_SHORT);
+                        toast.setGravity(Gravity.CENTER,0,0);
+                        toast.show();
+
                     }
                 }
             });
 
             return convertView;
+        }
+
+        //열린 편지 기본 ui 세팅
+        public void OpenbasicSetting(InboxItemViewHolder viewHolder, View convertView, Inbox_Item inbox_item){
+            viewHolder.d_day_Tv = (TextView)convertView.findViewById(R.id.receive_day_open_textview);
+            viewHolder.d_day_Tv.setText(""+inbox_item.r_year+"."+inbox_item.r_month+"."+inbox_item.r_day);
+            viewHolder.sent_Tv  = (TextView)convertView.findViewById(R.id.sent_day_open_textview);
+            viewHolder.sent_Tv.setText(""+inbox_item.s_year+"."+inbox_item.s_month+"."+inbox_item.s_day);
+        }
+
+        //닫힌 편지 기본 ui 세팅
+        public void ClosebasicSetting(InboxItemViewHolder viewHolder, View convertView, Inbox_Item inbox_item, long d_day){
+            viewHolder.d_day_Tv = (TextView)convertView.findViewById(R.id.d_day_close_textview);
+            viewHolder.d_day_Tv.setText("D - "+Math.abs(d_day));
+            viewHolder.sent_Tv  = (TextView)convertView.findViewById(R.id.sent_day_close_textview);
+            viewHolder.sent_Tv.setText(""+inbox_item.s_year+"."+inbox_item.s_month+"."+inbox_item.s_day);
         }
     }
 

@@ -32,16 +32,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="modify UI">
+    <list default="true" id="5dd71d10-612b-4519-96b8-038ff3479aed" name="Default Changelist" comment="Connect each Inbox_View to GridView inboxlist">
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxAdapter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/InboxList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/Inbox_Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/Inbox_Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/org/techtown/slowletter/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -236,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620641870377</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Connect each Inbox_View to GridView inboxlist">
+      <created>1621172697479</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1621172697479</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,7 +266,8 @@
     <MESSAGE value="implement list adapter" />
     <MESSAGE value="delete scrollview" />
     <MESSAGE value="use adapter" />
-    <option name="LAST_COMMIT_MESSAGE" value="use adapter" />
+    <MESSAGE value="Connect each Inbox_View to GridView inboxlist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Connect each Inbox_View to GridView inboxlist" />
   </component>
   <component name="WindowStateProjectService">
     <state x="856" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1620646498660">
@@ -277,22 +282,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1620632180315" />
-    <state width="1491" height="-41" key="GridCell.Tab.0.bottom" timestamp="1621172439518">
+    <state width="1491" height="68" key="GridCell.Tab.0.bottom" timestamp="1621173435479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-41" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621172439518" />
-    <state width="1491" height="-41" key="GridCell.Tab.0.center" timestamp="1621172439518">
+    <state width="1491" height="68" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1621173435479" />
+    <state width="1491" height="68" key="GridCell.Tab.0.center" timestamp="1621173435479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-41" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621172439518" />
-    <state width="1491" height="-41" key="GridCell.Tab.0.left" timestamp="1621172439518">
+    <state width="1491" height="68" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1621173435479" />
+    <state width="1491" height="68" key="GridCell.Tab.0.left" timestamp="1621173435479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-41" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621172439518" />
-    <state width="1491" height="-41" key="GridCell.Tab.0.right" timestamp="1621172439518">
+    <state width="1491" height="68" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1621173435479" />
+    <state width="1491" height="68" key="GridCell.Tab.0.right" timestamp="1621173435479">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1491" height="-41" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621172439518" />
+    <state width="1491" height="68" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1621173435479" />
     <state x="564" y="132" key="RollbackChangesDialog" timestamp="1620540787342">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
